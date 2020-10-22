@@ -6,7 +6,7 @@ trap "kill 0" EXIT
 python3 -m http.server 80 &
 
 #Go to LetsEcrypt Dir to create PFX certificate
-cd [/path/to/letsencrypt/archive/[domain] 
+cd [/path/to/letsencrypt/archive/[domain]] 
 
 #openssl pkcs12 -export -out wildcard.pfx -inkey privkey1.pem -in fullchain1.pem
 #above asks to create a password for pfx file. code below puts it into a single line of code with variables to automate process
